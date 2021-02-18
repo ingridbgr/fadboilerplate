@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package fadboilerplate
+ * @package challenge
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function fadboilerplate_jetpack_setup() {
+function challenge_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'fadboilerplate_infinite_scroll_render',
+			'render'    => 'challenge_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function fadboilerplate_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'fadboilerplate-style',
+				'stylesheet' => 'challenge-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function fadboilerplate_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'fadboilerplate_jetpack_setup' );
+add_action( 'after_setup_theme', 'challenge_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function fadboilerplate_infinite_scroll_render() {
+function challenge_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

@@ -1,17 +1,17 @@
 {
-  "name": "fadboilerplate",
+  "name": "challenge",
   "version": "1.0.0",
-  "description": "Greetings! This is the fadboilerplate package built on _s, or underscores.",
+  "description": "Greetings! This is the challenge package built on _s, or underscores.",
   "author": "First Ascent Design",
   "license": "GPL-2.0-or-later",
   "keywords": [
     "WordPress",
-    "fadboilerplate"
+    "challenge"
   ],
   "homepage": "https://firstascentdesign.com",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/firstascentdesignllc/fadboilerplate/src/master/"
+    "url": "https://bitbucket.org/firstascentdesignllc/challenge/src/master/"
   },
   "devDependencies": {
     "@wordpress/scripts": "^12.6.0",

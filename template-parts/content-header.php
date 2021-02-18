@@ -1,6 +1,6 @@
 <?php
 /**
- * @package fadboilerplate
+ * @package challenge
  */
 ?>
 

@@ -2,10 +2,10 @@
 /**
  * Functions which declare theme support for WordPress
  *
- * @package fadboilerplate
+ * @package challenge
  */
 
-if ( ! function_exists( 'fadboilerplate_setup' ) ) :
+if ( ! function_exists( 'challenge_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -13,14 +13,14 @@ if ( ! function_exists( 'fadboilerplate_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function fadboilerplate_setup() {
+	function challenge_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on fadboilerplate, use a find and replace
-		 * to change 'fadboilerplate' to the name of your theme in all the template files.
+		 * If you're building a theme based on challenge, use a find and replace
+		 * to change 'challenge' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'fadboilerplate', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'challenge', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -61,7 +61,7 @@ if ( ! function_exists( 'fadboilerplate_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'fadboilerplate_custom_background_args',
+				'challenge_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -98,37 +98,37 @@ if ( ! function_exists( 'fadboilerplate_setup' ) ) :
 		// Editor Color Palette
 		add_theme_support( 'editor-color-palette', array(
 		 	array(
-		 		'name'  => __( 'Light Blue', 'fadboilerplate' ),
+		 		'name'  => __( 'Light Blue', 'challenge' ),
 		 		'slug'  => 'light-blue',
 		 		'color'	=> '#28b0e5',
 			),
 			array(
-		 		'name'  => __( 'Blue', 'fadboilerplate' ),
+		 		'name'  => __( 'Blue', 'challenge' ),
 		 		'slug'  => 'blue',
 		 		'color'	=> '#146e9a',
 			),
 			array(
-		 		'name'  => __( 'Black', 'fadboilerplate' ),
+		 		'name'  => __( 'Black', 'challenge' ),
 		 		'slug'  => 'black',
 		 		'color'	=> '#000000',
 			),
 			array(
-		 		'name'  => __( 'Dark Gray', 'fadboilerplate' ),
+		 		'name'  => __( 'Dark Gray', 'challenge' ),
 		 		'slug'  => 'dark-gray',
 		 		'color'	=> '#3f3f3f',
 			),
 			array(
-		 		'name'  => __( 'Gray', 'fadboilerplate' ),
+		 		'name'  => __( 'Gray', 'challenge' ),
 		 		'slug'  => 'gray',
 		 		'color'	=> '#6c757d',
 			),
 			array(
-		 		'name'  => __( 'Light Gray', 'fadboilerplate' ),
+		 		'name'  => __( 'Light Gray', 'challenge' ),
 		 		'slug'  => 'light-gray',
 		 		'color'	=> '#f8f9fa',
 			),
 			array(
-		 		'name'  => __( 'White', 'fadboilerplate' ),
+		 		'name'  => __( 'White', 'challenge' ),
 		 		'slug'  => 'white',
 		 		'color'	=> '#ffffff',
 			),
@@ -139,38 +139,38 @@ if ( ! function_exists( 'fadboilerplate_setup' ) ) :
 		// Adds support for editor font sizes.
 		add_theme_support( 'editor-font-sizes', array(
 			array(
-				'name'      => __( 'small', 'fadboilerplate' ),
-				'shortName' => __( 'S', 'fadboilerplate' ),
+				'name'      => __( 'small', 'challenge' ),
+				'shortName' => __( 'S', 'challenge' ),
 				'size'      => 14,
 				'slug'      => 'small'
 			),
 			array(
-				'name'      => __( 'regular', 'fadboilerplate' ),
-				'shortName' => __( 'M', 'fadboilerplate' ),
+				'name'      => __( 'regular', 'challenge' ),
+				'shortName' => __( 'M', 'challenge' ),
 				'size'      => 16,
 				'slug'      => 'regular'
 			),
 			array(
-				'name'      => __( 'large', 'fadboilerplate' ),
-				'shortName' => __( 'L', 'fadboilerplate' ),
+				'name'      => __( 'large', 'challenge' ),
+				'shortName' => __( 'L', 'challenge' ),
 				'size'      => 24,
 				'slug'      => 'large'
 			),
 			array(
-				'name'      => __( 'larger', 'fadboilerplate' ),
-				'shortName' => __( 'XL', 'fadboilerplate' ),
+				'name'      => __( 'larger', 'challenge' ),
+				'shortName' => __( 'XL', 'challenge' ),
 				'size'      => 32,
 				'slug'      => 'larger'
 			),
 			array(
-				'name'      => __( 'huge', 'fadboilerplate' ),
-				'shortName' => __( 'Huge', 'fadboilerplate' ),
+				'name'      => __( 'huge', 'challenge' ),
+				'shortName' => __( 'Huge', 'challenge' ),
 				'size'      => 48,
 				'slug'      => 'huge'
 			),
 			array(
-				'name'      => __( 'display', 'fadboilerplate' ),
-				'shortName' => __( 'Display', 'fadboilerplate' ),
+				'name'      => __( 'display', 'challenge' ),
+				'shortName' => __( 'Display', 'challenge' ),
 				'size'      => 72,
 				'slug'      => 'display'
 			),
@@ -181,7 +181,7 @@ if ( ! function_exists( 'fadboilerplate_setup' ) ) :
 		add_editor_style( 'editor.css' );
 	}
 endif;
-add_action( 'after_setup_theme', 'fadboilerplate_setup' );
+add_action( 'after_setup_theme', 'challenge_setup' );
 
 /**
  * Add custom admin theme
@@ -189,8 +189,8 @@ add_action( 'after_setup_theme', 'fadboilerplate_setup' );
 add_action( 'admin_init', 'miles_add_colors' );
 function miles_add_colors() {
 	wp_admin_css_color(
-        'fadboilerplate',
-        'fadboilerplate',
+        'challenge',
+        'challenge',
         get_template_directory_uri() . '/css/wp_admin.css', array( '#3f3f3f', '#103694', '#018ac6', '#17a2b8' ),
         array(
             'base' => '#e4e4e7',
@@ -200,14 +200,14 @@ function miles_add_colors() {
     );
 }
 
-function fadboilerplate_set_default_admin_color($user_id) {
+function challenge_set_default_admin_color($user_id) {
     $args = array(
         'ID' => $user_id,
-        'admin_color' => 'fadboilerplate'
+        'admin_color' => 'challenge'
     );
     wp_update_user( $args );
 }
-add_action('user_register', 'fadboilerplate_set_default_admin_color');
+add_action('user_register', 'challenge_set_default_admin_color');
 
 if ( !current_user_can('manage_options') )
 remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
@@ -219,13 +219,13 @@ remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
  *
  * @global int $content_width
  */
-function fadboilerplate_content_width() {
+function challenge_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'fadboilerplate_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'challenge_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'fadboilerplate_content_width', 0 );
+add_action( 'after_setup_theme', 'challenge_content_width', 0 );
 
 /**
  * Print scripts to the <head>
@@ -233,8 +233,8 @@ add_action( 'after_setup_theme', 'fadboilerplate_content_width', 0 );
  * Warning: There is no validation - copies directly from the acf field in
  *          Theme Options settings.
  */
-add_action( 'wp_head', 'fadboilerplate_wp_head' );
-function fadboilerplate_wp_head() {
+add_action( 'wp_head', 'challenge_wp_head' );
+function challenge_wp_head() {
 	if ( !is_admin() && !is_feed() && !is_robots() && !is_trackback() ) {
 		$advanced_settings = get_field('advanced_settings', 'options');
 		$header_scripts = ( isset( $advanced_settings['header_scripts'] ) ) ? $advanced_settings['header_scripts'] : '';
@@ -250,8 +250,8 @@ function fadboilerplate_wp_head() {
  * Warning: There is no validation - copies directly from the acf field in
  *          Theme Options settings.
  */
-add_action( 'wp_body_open', 'fadboilerplate_wp_body_open' );
-function fadboilerplate_wp_body_open() {
+add_action( 'wp_body_open', 'challenge_wp_body_open' );
+function challenge_wp_body_open() {
 	if ( !is_admin() && !is_feed() && !is_robots() && !is_trackback() ) {
 		$advanced_settings = get_field('advanced_settings', 'options');
 		$body_scripts = ( isset( $advanced_settings['body_scripts'] ) ) ? $advanced_settings['body_scripts'] : '';
@@ -267,8 +267,8 @@ function fadboilerplate_wp_body_open() {
  * Warning: There is no validation - copies directly from the acf field in
  *          Theme Options settings.
  */
-add_action( 'wp_footer', 'fadboilerplate_wp_footer' );
-function fadboilerplate_wp_footer() {
+add_action( 'wp_footer', 'challenge_wp_footer' );
+function challenge_wp_footer() {
 	if ( !is_admin() && !is_feed() && !is_robots() && !is_trackback() ) {
 		$advanced_settings = get_field('advanced_settings', 'options');
 		$footer_scripts = ( isset( $advanced_settings['footer_scripts'] ) ) ? $advanced_settings['footer_scripts'] : '';

@@ -8,7 +8,7 @@
  * @param  string $content The text inside the button
  * @return string          The html for the button
  */
-function fadboilerplate_cta_button_shortcode( $atts, $content = null ) {
+function challenge_cta_button_shortcode( $atts, $content = null ) {
 	$a = shortcode_atts( array(
 		'link' => '',
 		'class' => '',
@@ -33,6 +33,6 @@ function fadboilerplate_cta_button_shortcode( $atts, $content = null ) {
 	return ob_get_clean();
 }
 // [cta_button class="" link=""]Button Text[/cta_button]
-add_shortcode( 'cta_button', 'fadboilerplate_cta_button_shortcode' );
-add_shortcode( 'fadboilerplate_button', 'fadboilerplate_cta_button_shortcode' );
-add_shortcode( 'fadboilerplate_btn', 'fadboilerplate_cta_button_shortcode' );
+add_shortcode( 'cta_button', 'challenge_cta_button_shortcode' );
+add_shortcode( 'challenge_button', 'challenge_cta_button_shortcode' );
+add_shortcode( 'challenge_btn', 'challenge_cta_button_shortcode' );

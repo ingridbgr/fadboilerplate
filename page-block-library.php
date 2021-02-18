@@ -3,7 +3,7 @@
  * Template Name: Block Library
  * The template for displaying the style guide
  *
- * @package fadboilerplate
+ * @package challenge
  */
 add_action('wp_head', function() { ?>
 	<style>

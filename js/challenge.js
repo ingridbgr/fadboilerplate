@@ -1,5 +1,5 @@
 /*******************************************
- *  fadboilerplate.js
+ *  challenge.js
  *******************************************/
 
 /*******************************************
@@ -217,8 +217,8 @@ function revealOnScroll() {
 		offset = 50; // move trigger to center of element
 
 	// add it to any items specifically tagged
-	if($(".fadboilerplate-fade-in")) {
-		$(".fadboilerplate-fade-in").each(function(index, element) {
+	if($(".challenge-fade-in")) {
+		$(".challenge-fade-in").each(function(index, element) {
 			// build scene
 			new ScrollMagic.Scene({
 				triggerElement: element,
@@ -250,7 +250,7 @@ function revealOnScroll() {
 			});
 
 			if(addToController) {
-				$(element).addClass("fadboilerplate-f-in");
+				$(element).addClass("challenge-f-in");
 
 				// build scene
 				new ScrollMagic.Scene({
@@ -272,7 +272,7 @@ function revealOnScroll() {
 			});
 
 			if(addToController) {
-				$(element).addClass("fadboilerplate-f-in");
+				$(element).addClass("challenge-f-in");
 
 				// build scene
 				new ScrollMagic.Scene({

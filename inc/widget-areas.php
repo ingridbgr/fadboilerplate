@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function fadboilerplate_widgets_init() {
+function challenge_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'fadboilerplate' ),
+			'name'          => esc_html__( 'Sidebar', 'challenge' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'fadboilerplate' ),
+			'description'   => esc_html__( 'Add widgets here.', 'challenge' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -17,4 +17,4 @@ function fadboilerplate_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'fadboilerplate_widgets_init' );
+add_action( 'widgets_init', 'challenge_widgets_init' );

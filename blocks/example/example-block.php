@@ -6,7 +6,7 @@
  * @param   string $content The block inner HTML (empty).
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
- * @package fadboilerplate
+ * @package challenge
  */
 
 // Create id attribute allowing for custom "anchor" value.

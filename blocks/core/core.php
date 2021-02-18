@@ -65,7 +65,7 @@ function wporg_block_wrapper( $block_content, $block ) {
 }
 add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
 
-function fadboilerplate_register_block_styles() {
+function challenge_register_block_styles() {
 
 	/**
 	 * Group
@@ -75,8 +75,8 @@ function fadboilerplate_register_block_styles() {
 		array(
 			'name'         => 'gutter',
 			'label'        => __( 'Gutter' ),
-			'style_handle' => 'fadboilerplate'
+			'style_handle' => 'challenge'
 		)
 	);
 }
-add_action('acf/init', 'fadboilerplate_register_block_styles');
+add_action('acf/init', 'challenge_register_block_styles');

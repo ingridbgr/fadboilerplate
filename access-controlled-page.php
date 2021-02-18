@@ -5,7 +5,7 @@
  *
  * The template for displaying a page only if the user is logged in.
  *
- * @package fadboilerplate
+ * @package challenge
  */
 if ( ! is_user_logged_in() ) {
 	$current_url  = esc_url( home_url($_SERVER['REQUEST_URI']) );

@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles for the frontend.
  */
-function fadboilerplate_scripts() {
+function challenge_scripts() {
 	/**
 	 * Additional Styles
 	 */
@@ -21,8 +21,8 @@ function fadboilerplate_scripts() {
  	if (defined('WP_DEBUG') && false === WP_DEBUG) {
  		$template_uri = get_template_directory_uri() . '/style-dist.css';
  	}
- 	wp_enqueue_style( 'fadboilerplate-style', $template_uri, array(), _S_VERSION );
- 	wp_style_add_data( 'fadboilerplate-style', 'rtl', 'replace' );
+ 	wp_enqueue_style( 'challenge-style', $template_uri, array(), _S_VERSION );
+ 	wp_style_add_data( 'challenge-style', 'rtl', 'replace' );
 
 
 
@@ -30,7 +30,7 @@ function fadboilerplate_scripts() {
 	 * Scripts
 	 */
 	// Skip Link Focus
-	wp_enqueue_script( 'fadboilerplate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'challenge-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
 
 	// Comment Reply Script
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -82,16 +82,16 @@ function fadboilerplate_scripts() {
 	wp_enqueue_script( 'bootstrap-js' );
 
 	// Theme Scripts
-	wp_register_script( 'fadboilerplate-js', get_template_directory_uri() . '/js/fadboilerplate.js', array('jquery'), NULL, true );
-	wp_enqueue_script( 'fadboilerplate-js' );
+	wp_register_script( 'challenge-js', get_template_directory_uri() . '/js/challenge.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'challenge-js' );
 
 }
-add_action( 'wp_enqueue_scripts', 'fadboilerplate_scripts' );
+add_action( 'wp_enqueue_scripts', 'challenge_scripts' );
 
 /**
  * Dequeue WordPress default scripts
  */
-function fadboilerplate_default_scripts( $scripts ) {
+function challenge_default_scripts( $scripts ) {
 	if ( ! is_admin() && isset( $scripts->registered['jquery'] ) ) {
 		$script = $scripts->registered['jquery'];
 		if ( $script->deps ) {
@@ -100,7 +100,7 @@ function fadboilerplate_default_scripts( $scripts ) {
 		}
 	}
 }
-add_action( 'wp_default_scripts', 'fadboilerplate_default_scripts' );
+add_action( 'wp_default_scripts', 'challenge_default_scripts' );
 
 /**
  * Custom Login Styles

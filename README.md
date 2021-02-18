@@ -1,7 +1,7 @@
 # FAD Boilerplate Theme
 
 Cloned from Boilerplate 0/0/0000
-
+*Ingrid added this text right here* 
 ---
 ## Do not replace class-wp-bootstrap-navwalker
 This class has built in changes that the theme relies on.

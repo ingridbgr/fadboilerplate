@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'example-' . $block['id'];
+$id = 'new-example-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'block-example';
+$className = 'new-example-block';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -25,9 +25,9 @@ if( !empty($block['align']) ) {
 }
 
 // Get ACF fields.
-$content = get_field( 'content' );
-$one_more_field = get_field( 'one_more_field' ); 
-$the_other_field = get_field( 'the_other_field');
+$new_content = get_field( 'new_content' );
+$new_one_more_field = get_field( 'new_one_more_field' ); 
+$new_other_field = get_field( 'new_other_field');
 
 // Display Preview
 if (isset($block['data']['is_preview']) && $block['data']['is_preview'] == true) :
@@ -38,12 +38,12 @@ else :
 ?>
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-	<div class="block-example__container bg-primary text-light p-5">
-        <h1>Example Block</h1>
-		<div class="block-example__text-container">
-            <p><?php echo esc_html( $content ); ?></p>
-            <p><?php echo esc_html( $one_more_field ); ?></p>
-            <p><?php echo esc_html( $the_other_field ); ?></p>
+	<div class="new-example-block__container bg-primary text-light p-5">
+        <h1>New Example Block</h1>
+		<div class="new-example-block__text-container">
+            <p><?php echo esc_html( $new_content ); ?></p>
+            <p><?php echo esc_html( $new_one_more_field ); ?></p>
+            <p><?php echo esc_html( $new_other_field ); ?></p>
 		</div>
 	</div>
 </section>

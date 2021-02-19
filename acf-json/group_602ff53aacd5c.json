@@ -1,6 +1,6 @@
 {
     "key": "group_602ff53aacd5c",
-    "title": "Block - New Example",
+    "title": "New Example",
     "fields": [
         {
             "key": "field_602ff67f3a0a2",
@@ -65,7 +65,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/example"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613758841
+    "modified": 1613765162
 }

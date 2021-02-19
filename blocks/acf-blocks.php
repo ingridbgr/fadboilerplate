@@ -41,18 +41,18 @@ function register_acf_block_types() {
 	));
 
 	acf_register_block_type(array(
-	    'name'              => 'new-example',
+	    'name'              => 'new-example-block',
 	    'title'             => __('New Example'),
 	    'category'          => 'challenge-blocks',
 	    'description'       => __('New Example Block'),
 	    'render_template'   => 'blocks/new_example/new-example-block.php',
 	    'icon'              => 'wordpress',
 	    'keywords'          => array( 'new-example' ),
-		'example'           => array(
+		'new-example'       => array(
 			'attributes' => array(
 				'mode' => 'preview',
 				'data' => array(
-					'preview_image'   => get_stylesheet_directory_uri() . "/blocks/example/example-block_preview-image.png",
+					'preview_image'   => get_stylesheet_directory_uri() . "/blocks/new_example/new-example-block_preview-image.png",
 					'is_preview'    => true
 				)
 			)
